@@ -1,3 +1,5 @@
+'use client'
+
 import getBillboards from "@/actions/get-billboards";
 import Container from "@/components/ui/container";
 import Billboard from "@/components/billboard";
