@@ -6,6 +6,8 @@ export interface ButtonProps
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, children, disabled, type = "button", ...props }, ref) => {
+   
+   
     return (
       <button
         className={cn(`first-letter:
@@ -23,6 +25,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     transition
 
     `)}
+    disabled={disabled}
         ref={ref}
         {...props}
       >
