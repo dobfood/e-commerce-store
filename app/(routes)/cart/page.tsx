@@ -1,3 +1,5 @@
+'use client'
+
 import Container from "@/components/ui/container";
 import useCart from "@/hooks/use-card";
 import { useEffect, useState } from "react";
