@@ -1,31 +1,34 @@
-import Footer from '@/components/footer'
+import Footer from "@/components/footer";
 
-import './globals.css'
+import "./globals.css";
 
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 
-import { Urbanist } from 'next/font/google'
-import Navbar from '@/components/navbar'
+import { Urbanist } from "next/font/google";
+import Navbar from "@/components/navbar";
+import ModalProvider from "@/provider/modal-provider";
 
-const inter = Urbanist({ subsets: ['latin'] })
+const inter = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Store',
-  description: 'Store my ',
-}
+  title: "Store",
+  description: "Store my ",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+        <ModalProvider />
+        <Navbar />
+
         {children}
-      <Footer/>
+        <Footer />
       </body>
     </html>
-  )
+  );
 }
