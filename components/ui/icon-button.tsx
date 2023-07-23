@@ -1,7 +1,7 @@
 'use client'
 
 import { MouseEventHandler } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "@/libs/utils";
 
 interface IconButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
