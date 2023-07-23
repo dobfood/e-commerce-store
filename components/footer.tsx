@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="bg-white border-t">
       <div className="mx-auto py-10">
-        <p className="text-enter text-xs text-black">
+        <p className="text-center text-xs text-black">
           &copy; 2023 EvilsStoreA ,Inc.All rights reserved
         </p>{" "}
       </div>
